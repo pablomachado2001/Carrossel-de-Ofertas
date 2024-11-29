@@ -1,0 +1,139 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =============================== carrossel de ofertas ================================ */
+
+.offerCarousel {
+    width: 1600px;
+    height: 550px;
+    background-color: white;
+    border: 3px solid rgba(201, 201, 201, 0.226);
+}
+
+.offerCarouselTextConteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1600px;
+    height: 60px;
+    background-color: red;
+}
+
+.offerCarouselText {
+    font-size: 50px;
+    color: white;
+    font-family: Kadwa;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-button-left,
+.img-button-right {
+    width: 60px;
+    height: 60px;
+}
+
+.img-button-left,
+.img-button-right:hover {
+    cursor: pointer;
+}
+
+.button-left,
+.button-right {
+    height: 490px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.productsCarousel {
+    min-width: 1380px;
+    overflow: hidden;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: column;
+    gap: 65px;
+    height: 490px;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* =============================== card produtos ================================ */
+
+.productCard {
+    width: 270px;
+    height: 398px;
+    flex: 0 0 auto;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid #8F8F8F;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.productImageConteiner {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImage {
+    max-width: 240px;
+    max-height: 240px;
+}
+
+.productNameConteiner {
+    width: auto;
+    height: 40px;
+    padding: 20px;
+
+}
+
+.productPriceConteiner {
+    width: auto;
+    height: 78px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.productOldPrice,
+.productNewPrice,
+.productText {
+    padding: 3px;
+}
+
+.productOldPrice{
+    color: #8F8F8F;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.productText {
+    color: #8F8F8F;
+    font-size: 12px;
+}
+
+
+.productNewPrice {
+    color: red;
+    font-size: 24px;
+    
+}
+/* =============================================================== */
